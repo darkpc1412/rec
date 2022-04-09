@@ -152,12 +152,7 @@ async def next_page(bot, query):
                 InlineKeyboardButton("🛡️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"💠ᴘᴀɢᴇ💠 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ 🛡️", callback_data=f"next_{req}_{key}_{n_offset}")]
-            )
-    btn.insert(0,
-            [
-                InlineKeyboardButton("⭕️ ɢʀᴏᴜᴘ ⭕️", url="https://t.me/cinemaenglish123"),
-                InlineKeyboardButton("⭕️ ᴅᴇᴠ ⭕️", url="https://t.me/abhisheksvlog")
-            ])
+            )    
 
     btn.insert(0, [
         InlineKeyboardButton("🎀 ᴄʜᴇᴄᴋ ʙᴏᴛ ᴘᴍ ғɪʀsᴛ 🎀", url=f"https://t.me/{temp.U_NAME}")
@@ -201,6 +196,22 @@ async def advantage_spoll_choker(bot, query):
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
+        reply1 = await query.message.reply_text(
+            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
+        )
+        reply2 = await reply1.edit_text(
+            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
+        )
+        reply3 = await reply2.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        )
+        reply4 = await reply3.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        )
+        reply5 = await reply4.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
+        )
+        await reply5.delete()
         await query.message.delete()
     elif query.data == "delallconfirm":
         userid = query.from_user.id
@@ -725,21 +736,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('✗ ᴄʟᴏsᴇ ᴛʜᴇ ᴍᴇɴᴜ ✗', callback_data='close_data')
         ]]
-        await query.message.edit_text(
+        reply1 = await query.message.reply_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply2 = await reply1.edit_text(
             text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply3 = await reply2.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply4 = await reply3.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
         )
-        await query.message.edit_text(
+        reply5 = await reply4.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
+        await reply5.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -838,21 +850,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('ᴄʟᴏsᴇ x', callback_data='close_data')
         ]]
-        await query.message.edit_text(
+        reply1 = await query.message.reply_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply2 = await reply1.edit_text(
             text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply3 = await reply2.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply4 = await reply3.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
         )
-        await query.message.edit_text(
+        reply5 = await reply4.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
+        await reply5.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -900,6 +913,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝑆𝑡𝑎𝑡𝑢𝑠', callback_data='stats'),
             InlineKeyboardButton('𝐶𝑙𝑜𝑠𝑒 ✗', callback_data='close_data')
         ]]
+        reply1 = await query.message.reply_text(
+            text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
+        )
+        reply2 = await reply1.edit_text(
+            text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
+        )
+        reply3 = await reply2.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
+        )
+        reply4 = await reply3.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
+        )
+        reply5 = await reply4.edit_text(
+            text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
+        )
+        await reply5.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
         await query.message.edit_text(
@@ -923,21 +952,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« 𝙱𝚊𝚌𝚔', callback_data='start'),
             InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 ✗', callback_data='close_data'),
         ]]
-        await query.message.edit_text(
+        reply1 = await query.message.reply_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply2 = await reply1.edit_text(
             text="⦿ ⦿ ⦿ ⭗ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply3 = await reply2.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⭗ ⭗"
         )
-        await query.message.edit_text(
+        reply4 = await reply3.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⭗"
         )
-        await query.message.edit_text(
+        reply5 = await reply4.edit_text(
             text="⦿ ⦿ ⦿ ⦿ ⦿ ⦿"
         )
+        await reply5.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
