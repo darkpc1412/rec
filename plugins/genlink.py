@@ -9,6 +9,7 @@ import os
 import json
 import base64
 import logging
+import asyncio
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -123,3 +124,5 @@ async def gen_link_batch(bot, message):
     os.remove(f"batchmode_{message.from_user.id}.json")
     file_id, ref = unpack_new_file_id(post.document.file_id)
     await sts.edit(f"Here is your link\nContains `{og_msg}` files.\n https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
+    await asyncio.sleep(60)
+    await message.delete()
