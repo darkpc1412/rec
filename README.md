@@ -60,5 +60,5 @@
 * `USE_CAPTION_FILTER`: Whether bot should use captions to improve search results. (True/False)
 
 
-
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/M_Qmfg)
 
