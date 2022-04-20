@@ -16,8 +16,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/200920082007/TigerShroff",
-    "repository": "https://github.com/200920082007/TigerShroff",
+    "website": "https://github.com/darkpc1412/rec",
+    "repository": "https://github.com/darkpc1412/rec",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
